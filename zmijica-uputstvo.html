@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmijica</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="bootstrap.js"></script>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body class="container bg-dark">
+    <header>
+        <div class="text-light text-center">
+            <h1>Korisničko uputstvo</h1>
+        </div>
+    </header>
+    <div class="text-light">
+        <br><h5>O podešavanjima igre</h5>
+        Izaberite veličinu terena i težinu igre korišćenjem radio-dugmadi ispod. <br>
+        Klikom na "Igraj igru" prelazi se na igru. <br>
+        
+        <br><h5>O početku igre i kretanju</h5>
+        Igra započinje klikom na taster Space. <br>
+        Zmija se kreće pritiskanjem tastera sa strelicama. <br>
+        
+        <br><h5>O veličini zmijice</h5>
+        Zmijica ima početnu veličinu od jednog bloka. <br> 
+        Zmijica se povećava za jedan blok svaki put kada pojede hranu ili super-hranu. <br>
+        
+        <br><h5>O hrani i super-hrani</h5>
+        Hrana je predstavljena crvenim poljima i svaki put kad zmijica "pojede" hranu igrač dobija 1 poen. <br>
+        Super-hrana je predstavljena zlatnim poljima i svaki put kad zmijica "pojede" super-hranu igrač dobija 5 poena. <br>
+
+        <br><h5>O kraju igre i bodovanju</h5>
+        Igra se završava kada zmijica udari u ivicu terena ili u svoje telo. <br>
+        Tada se od igrača traži da unese ime s kojim želi da bude zapisan na rang listi. <br>
+        
+        <br><h5>O rang listi</h5>
+        Na rang listi se ispisuje 5 najboljih rezultata. <br>
+        U slučaju da je odigrano manje od 5 partija, na rang listi se nalaze svi postignuti rezultati. <br>
+        Klikom na  "Pregled rezultata" prelazi se na tabelarni prikaz rang liste. <br>
+        <br><h5>O super-hrani</h5>
+        Super-hrana se pojavljuje na tabli na svakih 10 sekundi. <br>
+        Igrač ima 5 sekundi da pojede super-hranu, u suprotnom super-hrana nestaje sa table. <br>
+
+        <br>
+        <a href="zmijica-rezultati.html">
+            <button>Pregled rezultata</button>
+        </a>
+        <br><br><br><br>
+    </div>
+
+    <header>
+        <div class="text-light text-center">
+            <h1>Podešavanja igre</h1>
+        </div>
+    </header>
+    <div class="text-light">
+        <form>
+            <h3>Veličina</h3>
+            <input type="radio" name="velicina" id="malo">Malo <br>
+            <input type="radio" name="velicina" id="srednje">Srednje <br>
+            <input type="radio" name="velicina" id="veliko">Veliko <br>
+            <br>
+            <h3>Težina</h3>
+            <input type="radio" name="tezina" id="lako">Lako <br>
+            <input type="radio" name="tezina" id="normalno">Srednje <br>
+            <input type="radio" name="tezina" id="teško">Teško <br>
+            <br>
+        </form>
+        <button id="init" >Igraj igru</button>
+    </div>
+</body>
+</html>
